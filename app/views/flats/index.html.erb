@@ -1,0 +1,8 @@
+<h1>The best flats:</h1>
+
+<ol>
+  <% @flats.each do |flat| %>
+    <% id = flat["id"] %>
+    <li><%= link_to flat["name"], flat_path(id) %></li>
+  <% end %>
+</ol>
